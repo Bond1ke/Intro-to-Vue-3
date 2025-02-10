@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Vue Mastery</title>
     <!-- Import Styles -->
-    <link rel="stylesheet" :href="url" />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   </head>
@@ -21,6 +21,7 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <a :href="url"> Made with VueMastery</a>
           </div>
         </div>
       </div>
@@ -31,7 +32,7 @@
 
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('html')
+      const mountedApp = app.mount('#app')
     </script>
   </body>
 </html>
